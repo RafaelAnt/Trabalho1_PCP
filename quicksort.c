@@ -13,11 +13,21 @@ void quicksort(int lo,int hi){
   int i=lo,j=hi,h;
   int x=array[(lo+hi)/2];
 
-  #pragma	omp parallel
+
   //partition
   do{
-    while(array[i]<x) i++;
-    while(array[j]>x) j--;
+    #pragma	omp parallel{
+      #pragma omp sections{
+        #pragma omp section{
+          while(array[i] < x){i++;}
+        }
+        #pragma omp section{
+          while(array[j] > x){j--;}
+        }
+      }
+    }
+    #pragma omp barrier
+
     if(i<=j){
       h=array[i];
       array[i]=array[j];
@@ -28,7 +38,6 @@ void quicksort(int lo,int hi){
   }while(i<=j);
 
   //recursion
-  #pragma omp for schedule(guided)
   if(lo<j) quicksort(lo,j);
   if(i<hi) quicksort(i,hi);
 
