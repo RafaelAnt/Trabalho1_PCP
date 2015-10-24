@@ -3,7 +3,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define ARRAY_SIZE 100000000 //100 mil elementos
+#define ARRAY_SIZE 100000000
 
 int * array;
 
@@ -22,7 +22,7 @@ int test (long double sum) {
   	i++;
   }
 
-  printf("Sumatório depois de ordenação: %lld\n",sumF);
+  //printf("Sumatório depois de ordenação: %lld\n",sumF);
   if (sum!=sumF) correct=0;
 
   return correct;
@@ -43,21 +43,9 @@ void quicksort(int lo,int hi){
   int i=lo,j=hi,h;
   int x=array[(lo+hi)/2];
 
-
-  //partition
   do{
-    /* #pragma omp parallel sections
-     {
-       #pragma omp section
-       {*/
-           while(array[i]<x) i++;
-       /*}
-       #pragma omp section
-       {*/
-           while(array[j]>x) j--;
-      /* }
-     #pragma omp barrier
-   }*/
+   while(array[i]<x) i++;
+   while(array[j]>x) j--;
 
     if(i<=j){
       h=array[i];
@@ -71,7 +59,6 @@ void quicksort(int lo,int hi){
   //recursion
   if(lo<j) quicksort(lo,j);
   if(i<hi) quicksort(i,hi);
-
 }
 
 
@@ -88,10 +75,12 @@ int main (){
   printf("A inicializar o array com %d elementos...\n", ARRAY_SIZE);
 
   while(i<ARRAY_SIZE){
-    array[i] = rand() % 80 + 1;
+    array[i] = rand() % 100 +1;
     sum += array[i];
     i++;
   }
+
+  //printArray();
 
   printf("Concluido!\n");
   printf("Tamanho do array: ");
@@ -101,11 +90,11 @@ int main (){
   if(bytes>1024*1024)  printf("%.3f Mbytes...\n", (double) bytes/(1024*1024));
 
 
-  printf("Sumatório depois de ordenação: %lld\n",sum);
+  //printf("Sumatório: %lld\n",sum);
   printf("A correr o quicksort...\n");
   clock_t start = clock(); //inicio contagem do tempo
 
-  quicksort(0,ARRAY_SIZE);
+  quicksort(0,ARRAY_SIZE-1);
 
   clock_t end = clock();  //fim da contagem do tempo
   float seconds = (float)(end - start) / CLOCKS_PER_SEC;
@@ -120,6 +109,7 @@ int main (){
   if (r==0) printf("Incorreto\n");
   if (r==1) printf("Correto\n");
 
+  //printArray();
 
   printf("\n\n*******************************************************\n\n");
 
