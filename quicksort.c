@@ -3,7 +3,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define ARRAY_SIZE 100000000
+#define ARRAY_SIZE 100000
 
 int * array;
 
@@ -40,12 +40,24 @@ void printArray(){
 
 void quicksort(int lo,int hi){
 
+
+
   int i=lo,j=hi,h;
   int x=array[(lo+hi)/2];
 
   do{
-   while(array[i]<x) i++;
-   while(array[j]>x) j--;
+ 	/*#pragma omp parallel sections
+ 	{
+ 		#pragma omp section
+ 		{*/
+     		while(array[i]<x) i++;
+ 		/*}
+ 		#pragma omp section
+ 		{*/
+     		while(array[j]>x) j--;
+ 		/*}
+ 	}
+  #pragma omp barrier*/
 
     if(i<=j){
       h=array[i];
@@ -56,11 +68,15 @@ void quicksort(int lo,int hi){
     }
   }while(i<=j);
 
-  //recursion
-  if(lo<j) quicksort(lo,j);
-  if(i<hi) quicksort(i,hi);
+  //tá mal!!!
+  /*#pragma omp parallel sections
+  {
+    #pragma omp section*/
+    if(lo<j) quicksort(lo,j);
+    //#pragma omp section
+    if(i<hi) quicksort(i,hi);
+  //}
 }
-
 
 int main (){
 
