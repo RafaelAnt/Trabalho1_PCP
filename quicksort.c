@@ -6,6 +6,7 @@
 #define ARRAY_SIZE 5*1000*1000
 
 int * array;
+int nThreads = 1;
 
 int test (long double sum) {
 //test variables
@@ -40,38 +41,40 @@ void printArray(){
 
 void quicksort(int lo,int hi){
 
-
-
-  int i=lo,j=hi,h;
+  int i=lo,j=hi,h,tID;
   int x=array[(lo+hi)/2];
 
-  //#pragma omp parallel
-  //{
+
+    nThreads=omp_get_num_threads();
+
     do{
-   		while(array[i]<x) i++;
-   		while(array[j]>x) j--;
+
+          while(array[i]<x) i++;
+
+
+          while(array[j]>x) j--;
+
 
       if(i<=j){
-        //#pragma omp critical
-        //{
           h=array[i];
           array[i]=array[j];
           array[j]=h;
           i++;
           j--;
-        //}
       }
     }while(i<=j);
 
-    //tá mal!!!
-    //#pragma omp parallel sections
-    //{
-      //#pragma omp section
-      if(lo<j) quicksort(lo,j);
-      //#pragma omp section
-      if(i<hi) quicksort(i,hi);
-    //}
-  //}
+    #pragma omp parallel shared (i,j,hi,lo)
+    {
+      #pragma omp sections nowait
+      {
+        #pragma omp section
+        if(lo<j) quicksort(lo,j);
+
+        #pragma omp section
+        if(i<hi) quicksort(i,hi);
+      }
+    }
 }
 
 int main (){
@@ -101,7 +104,7 @@ int main (){
   if(bytes>1024 && bytes <= 1024*1024)  printf("%.3f Kbytes...\n", (double) bytes/1024);
   if(bytes>1024*1024)  printf("%.3f Mbytes...\n", (double) bytes/(1024*1024));
 
-
+  omp_set_num_threads(2);
   //printf("Sumatório: %lld\n",sum);
   printf("A correr o quicksort...\n");
 
@@ -111,8 +114,7 @@ int main (){
 
   double end = omp_get_wtime();  //fim da contagem do tempo
 
-  printf("Concluido!\n");
-  printf("Executado em %f segundos.\n",(end-start));
+  printf("Concluido com %d threads em %f segundos.\n", nThreads, (end-start));
   printf("A iniciar função de teste...\n");
 
   int r=test(sum);
