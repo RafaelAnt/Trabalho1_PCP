@@ -3,7 +3,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define ARRAY_SIZE 100000
+#define ARRAY_SIZE 5*1000*1000
 
 int * array;
 
@@ -45,36 +45,32 @@ void quicksort(int lo,int hi){
   int i=lo,j=hi,h;
   int x=array[(lo+hi)/2];
 
-  do{
- 	/*#pragma omp parallel sections
- 	{
- 		#pragma omp section
- 		{*/
-     		while(array[i]<x) i++;
- 		/*}
- 		#pragma omp section
- 		{*/
-     		while(array[j]>x) j--;
- 		/*}
- 	}
-  #pragma omp barrier*/
+  //#pragma omp parallel
+  //{
+    do{
+   		while(array[i]<x) i++;
+   		while(array[j]>x) j--;
 
-    if(i<=j){
-      h=array[i];
-      array[i]=array[j];
-      array[j]=h;
-      i++;
-      j--;
-    }
-  }while(i<=j);
+      if(i<=j){
+        //#pragma omp critical
+        //{
+          h=array[i];
+          array[i]=array[j];
+          array[j]=h;
+          i++;
+          j--;
+        //}
+      }
+    }while(i<=j);
 
-  //tá mal!!!
-  /*#pragma omp parallel sections
-  {
-    #pragma omp section*/
-    if(lo<j) quicksort(lo,j);
-    //#pragma omp section
-    if(i<hi) quicksort(i,hi);
+    //tá mal!!!
+    //#pragma omp parallel sections
+    //{
+      //#pragma omp section
+      if(lo<j) quicksort(lo,j);
+      //#pragma omp section
+      if(i<hi) quicksort(i,hi);
+    //}
   //}
 }
 
@@ -108,15 +104,15 @@ int main (){
 
   //printf("Sumatório: %lld\n",sum);
   printf("A correr o quicksort...\n");
-  clock_t start = clock(); //inicio contagem do tempo
+
+  double start = omp_get_wtime(); //inicio contagem do tempo
 
   quicksort(0,ARRAY_SIZE-1);
 
-  clock_t end = clock();  //fim da contagem do tempo
-  float seconds = (float)(end - start) / CLOCKS_PER_SEC;
+  double end = omp_get_wtime();  //fim da contagem do tempo
 
   printf("Concluido!\n");
-  printf("Executado em %f segundos.\n",seconds);
+  printf("Executado em %f segundos.\n",(end-start));
   printf("A iniciar função de teste...\n");
 
   int r=test(sum);
@@ -128,7 +124,6 @@ int main (){
   //printArray();
 
   printf("\n\n*******************************************************\n\n");
-
 }
 
 //
