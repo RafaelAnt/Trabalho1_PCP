@@ -44,16 +44,13 @@ void quicksort(int lo,int hi){
   int i=lo,j=hi,h,tID;
   int x=array[(lo+hi)/2];
 
-
-    nThreads=omp_get_num_threads();
-
+    //nThreads=omp_get_num_threads();
     do{
-
+          //#pragma omp task shared(i)
           while(array[i]<x) i++;
-
-
+          //#pragma omp task shared(j)
           while(array[j]>x) j--;
-
+          //#pragma omp taskwait
 
       if(i<=j){
           h=array[i];
@@ -64,14 +61,17 @@ void quicksort(int lo,int hi){
       }
     }while(i<=j);
 
-    #pragma omp parallel shared (i,j,hi,lo)
+    //#pragma omp parallel //shared (i,j,hi,lo)
     {
-      #pragma omp sections nowait
+      //#pragma omp sections //nowait
+      //#pragma omp single
       {
         #pragma omp section
+        //#pragma omp task
         if(lo<j) quicksort(lo,j);
 
         #pragma omp section
+        //#pragma omp task
         if(i<hi) quicksort(i,hi);
       }
     }
@@ -104,13 +104,22 @@ int main (){
   if(bytes>1024 && bytes <= 1024*1024)  printf("%.3f Kbytes...\n", (double) bytes/1024);
   if(bytes>1024*1024)  printf("%.3f Mbytes...\n", (double) bytes/(1024*1024));
 
-  omp_set_num_threads(2);
+  omp_set_num_threads(8);
   //printf("Sumatório: %lld\n",sum);
   printf("A correr o quicksort...\n");
 
   double start = omp_get_wtime(); //inicio contagem do tempo
 
-  quicksort(0,ARRAY_SIZE-1);
+  #pragma omp parallel
+  {
+    #pragma omp master
+    {
+      #pragma omp sections
+      {
+    quicksort(0,ARRAY_SIZE-1);
+    }
+    }
+  }
 
   double end = omp_get_wtime();  //fim da contagem do tempo
 
