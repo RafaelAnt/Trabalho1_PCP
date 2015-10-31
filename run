@@ -1,8 +1,12 @@
 echo "System specs"  >report.txt
 echo ""  >>report.txt
-echo "Precessor"  >>report.txt
+echo "Precessor - cat /proc/cpuinfo"  >>report.txt
 echo ""  >>report.txt
 cat /proc/cpuinfo >>report.txt
+echo ""  >>report.txt
+echo "Precessor - lscpu"  >>report.txt
+echo ""  >>report.txt
+lscpu >>report.txt
 echo ""  >>report.txt
 echo "Memory"  >>report.txt
 echo ""  >>report.txt
