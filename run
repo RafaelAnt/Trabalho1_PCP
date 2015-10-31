@@ -1,4 +1,15 @@
-echo "REP 1"  >report.txt
+echo "System specs"  >report.txt
+echo ""  >>report.txt
+echo "Precessor"  >>report.txt
+echo ""  >>report.txt
+cat /proc/cpuinfo >>report.txt
+echo ""  >>report.txt
+echo "Memory"  >>report.txt
+echo ""  >>report.txt
+cat /proc/meminfo >>report.txt
+echo ""  >>report.txt
+
+echo "REP 1"  >>report.txt
 
 echo "1 thread"  >>report.txt
 ~/PCP/quicksort 1 >>report.txt
