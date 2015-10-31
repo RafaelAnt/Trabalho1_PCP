@@ -1,0 +1,810 @@
+REP 1
+1 thread
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 1 threads em 0.848868 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+2 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 2 threads em 0.443073 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+4 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 4 threads em 0.256940 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+8 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 8 threads em 0.228936 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+16 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 16 threads em 0.265845 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+24 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 24 threads em 0.291267 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+32 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 32 threads em 0.304986 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+40 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 40 threads em 0.393616 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+48 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 48 threads em 0.410710 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+REP 2
+1 thread
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 1 threads em 0.843166 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+2 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 2 threads em 0.445773 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+4 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 4 threads em 0.267584 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+8 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 8 threads em 0.251168 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+16 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 16 threads em 0.271860 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+24 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 24 threads em 0.325251 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+32 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 32 threads em 0.369343 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+40 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 40 threads em 0.362252 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+48 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 48 threads em 0.401871 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+REP 3
+1 thread
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 1 threads em 0.836908 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+2 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 2 threads em 0.446854 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+4 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 4 threads em 0.260464 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+8 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 8 threads em 0.238096 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+16 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 16 threads em 0.282373 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+24 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 24 threads em 0.270902 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+32 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 32 threads em 0.326023 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+40 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 40 threads em 0.349987 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+48 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 48 threads em 0.389929 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+REP 4
+1 thread
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 1 threads em 0.850001 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+2 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 2 threads em 0.447923 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+4 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 4 threads em 0.263680 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+8 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 8 threads em 0.219635 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+16 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 16 threads em 0.257540 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+24 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 24 threads em 0.276640 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+32 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 32 threads em 0.335709 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+40 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 40 threads em 0.376480 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+48 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 48 threads em 0.437831 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+REP 5
+1 thread
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 1 threads em 0.856156 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+2 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 2 threads em 0.442954 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+4 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 4 threads em 0.273545 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+8 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 8 threads em 0.260821 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+16 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 16 threads em 0.256989 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+24 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 24 threads em 0.306929 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+32 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 32 threads em 0.318753 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+40 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 40 threads em 0.351199 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
+
+48 threads
+
+
+*******************************************************
+
+A inicializar o array com 5000000 elementos...
+Concluido!
+Tamanho do array: 19.073 Mbytes...
+A correr o quicksort...
+Concluido com 48 threads em 0.383673 segundos.
+A iniciar função de teste...
+Concluido!
+Correto
+
+
+*******************************************************
+
