@@ -3,9 +3,10 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define ARRAY_SIZE 1000
+#define ARRAY_SIZE 50*1000
 
 // 5 milhoes +/- 19MB
+// 50 milhares +/- 200KB
 // 1 milhar +/- 4KB
 //#define N_THREADS 48
 

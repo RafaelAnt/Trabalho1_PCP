@@ -1,0 +1,156 @@
+echo "System specs"  >report200KB.txt
+echo ""  >>report200KB.txt
+echo "Precessor - cat /proc/cpuinfo"  >>report200KB.txt
+echo ""  >>report200KB.txt
+cat /proc/cpuinfo >>report200KB.txt
+echo ""  >>report200KB.txt
+echo "Precessor - lscpu"  >>report200KB.txt
+echo ""  >>report200KB.txt
+lscpu >>report200KB.txt
+echo ""  >>report200KB.txt
+echo "Memory"  >>report200KB.txt
+echo ""  >>report200KB.txt
+cat /proc/meminfo >>report200KB.txt
+echo ""  >>report200KB.txt
+
+echo "REP 1"  >>report200KB.txt
+
+echo "1 thread"  >>report200KB.txt
+~/PCP/quicksort 1 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "2 threads" >>report200KB.txt
+~/PCP/quicksort 2 >>report200KB.txt
+echo ""  >>report200KB.txt
+echo "4 threads" >>report200KB.txt
+~/PCP/quicksort 4 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "8 threads" >>report200KB.txt
+~/PCP/quicksort 8 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "16 threads" >>report200KB.txt
+~/PCP/quicksort 16 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "24 threads" >>report200KB.txt
+~/PCP/quicksort 24 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "32 threads" >>report200KB.txt
+~/PCP/quicksort 32 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "40 threads" >>report200KB.txt
+~/PCP/quicksort 40 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "48 threads" >>report200KB.txt
+~/PCP/quicksort 48 >>report200KB.txt
+echo "REP 2"  >>report200KB.txt
+
+echo "1 thread"  >>report200KB.txt
+~/PCP/quicksort 1 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "2 threads" >>report200KB.txt
+~/PCP/quicksort 2 >>report200KB.txt
+echo ""  >>report200KB.txt
+echo "4 threads" >>report200KB.txt
+~/PCP/quicksort 4 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "8 threads" >>report200KB.txt
+~/PCP/quicksort 8 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "16 threads" >>report200KB.txt
+~/PCP/quicksort 16 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "24 threads" >>report200KB.txt
+~/PCP/quicksort 24 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "32 threads" >>report200KB.txt
+~/PCP/quicksort 32 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "40 threads" >>report200KB.txt
+~/PCP/quicksort 40 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "48 threads" >>report200KB.txt
+~/PCP/quicksort 48 >>report200KB.txt
+
+echo "REP 3"  >>report200KB.txt
+
+echo "1 thread"  >>report200KB.txt
+~/PCP/quicksort 1 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "2 threads" >>report200KB.txt
+~/PCP/quicksort 2 >>report200KB.txt
+echo ""  >>report200KB.txt
+echo "4 threads" >>report200KB.txt
+~/PCP/quicksort 4 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "8 threads" >>report200KB.txt
+~/PCP/quicksort 8 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "16 threads" >>report200KB.txt
+~/PCP/quicksort 16 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "24 threads" >>report200KB.txt
+~/PCP/quicksort 24 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "32 threads" >>report200KB.txt
+~/PCP/quicksort 32 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "40 threads" >>report200KB.txt
+~/PCP/quicksort 40 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "48 threads" >>report200KB.txt
+~/PCP/quicksort 48 >>report200KB.txt
+echo "REP 4"  >>report200KB.txt
+
+echo "1 thread"  >>report200KB.txt
+~/PCP/quicksort 1 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "2 threads" >>report200KB.txt
+~/PCP/quicksort 2 >>report200KB.txt
+echo ""  >>report200KB.txt
+echo "4 threads" >>report200KB.txt
+~/PCP/quicksort 4 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "8 threads" >>report200KB.txt
+~/PCP/quicksort 8 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "16 threads" >>report200KB.txt
+~/PCP/quicksort 16 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "24 threads" >>report200KB.txt
+~/PCP/quicksort 24 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "32 threads" >>report200KB.txt
+~/PCP/quicksort 32 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "40 threads" >>report200KB.txt
+~/PCP/quicksort 40 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "48 threads" >>report200KB.txt
+~/PCP/quicksort 48 >>report200KB.txt
+echo "REP 5"  >>report200KB.txt
+
+echo "1 thread"  >>report200KB.txt
+~/PCP/quicksort 1 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "2 threads" >>report200KB.txt
+~/PCP/quicksort 2 >>report200KB.txt
+echo ""  >>report200KB.txt
+echo "4 threads" >>report200KB.txt
+~/PCP/quicksort 4 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "8 threads" >>report200KB.txt
+~/PCP/quicksort 8 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "16 threads" >>report200KB.txt
+~/PCP/quicksort 16 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "24 threads" >>report200KB.txt
+~/PCP/quicksort 24 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "32 threads" >>report200KB.txt
+~/PCP/quicksort 32 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "40 threads" >>report200KB.txt
+~/PCP/quicksort 40 >>report200KB.txt
+echo "" >>report200KB.txt
+echo "48 threads" >>report200KB.txt
+~/PCP/quicksort 48 >>report200KB.txt
