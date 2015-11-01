@@ -1,156 +1,156 @@
-echo "System specs"  >report.txt
-echo ""  >>report.txt
-echo "Precessor - cat /proc/cpuinfo"  >>report.txt
-echo ""  >>report.txt
-cat /proc/cpuinfo >>report.txt
-echo ""  >>report.txt
-echo "Precessor - lscpu"  >>report.txt
-echo ""  >>report.txt
-lscpu >>report.txt
-echo ""  >>report.txt
-echo "Memory"  >>report.txt
-echo ""  >>report.txt
-cat /proc/meminfo >>report.txt
-echo ""  >>report.txt
+echo "System specs"  
+echo ""  
+echo "Precessor - cat /proc/cpuinfo"  
+echo ""  
+cat /proc/cpuinfo 
+echo ""  
+echo "Precessor - lscpu"  
+echo ""  
+lscpu 
+echo ""  
+echo "Memory"  
+echo ""  
+cat /proc/meminfo 
+echo ""  
 
-echo "REP 1"  >>report.txt
+echo "REP 1"  
 
-echo "1 thread"  >>report.txt
-~/PCP/quicksort 1 >>report.txt
-echo "" >>report.txt
-echo "2 threads" >>report.txt
-~/PCP/quicksort 2 >>report.txt
-echo ""  >>report.txt
-echo "4 threads" >>report.txt
-~/PCP/quicksort 4 >>report.txt
-echo "" >>report.txt
-echo "8 threads" >>report.txt
-~/PCP/quicksort 8 >>report.txt
-echo "" >>report.txt
-echo "16 threads" >>report.txt
-~/PCP/quicksort 16 >>report.txt
-echo "" >>report.txt
-echo "24 threads" >>report.txt
-~/PCP/quicksort 24 >>report.txt
-echo "" >>report.txt
-echo "32 threads" >>report.txt
-~/PCP/quicksort 32 >>report.txt
-echo "" >>report.txt
-echo "40 threads" >>report.txt
-~/PCP/quicksort 40 >>report.txt
-echo "" >>report.txt
-echo "48 threads" >>report.txt
-~/PCP/quicksort 48 >>report.txt
-echo "REP 2"  >>report.txt
+echo "1 thread"  
+~/PCP/quicksort 1 
+echo "" 
+echo "2 threads" 
+~/PCP/quicksort 2 
+echo ""  
+echo "4 threads" 
+~/PCP/quicksort 4 
+echo "" 
+echo "8 threads" 
+~/PCP/quicksort 8 
+echo "" 
+echo "16 threads" 
+~/PCP/quicksort 16 
+echo "" 
+echo "24 threads" 
+~/PCP/quicksort 24 
+echo "" 
+echo "32 threads" 
+~/PCP/quicksort 32 
+echo "" 
+echo "40 threads" 
+~/PCP/quicksort 40 
+echo "" 
+echo "48 threads" 
+~/PCP/quicksort 48 
+echo "REP 2"  
 
-echo "1 thread"  >>report.txt
-~/PCP/quicksort 1 >>report.txt
-echo "" >>report.txt
-echo "2 threads" >>report.txt
-~/PCP/quicksort 2 >>report.txt
-echo ""  >>report.txt
-echo "4 threads" >>report.txt
-~/PCP/quicksort 4 >>report.txt
-echo "" >>report.txt
-echo "8 threads" >>report.txt
-~/PCP/quicksort 8 >>report.txt
-echo "" >>report.txt
-echo "16 threads" >>report.txt
-~/PCP/quicksort 16 >>report.txt
-echo "" >>report.txt
-echo "24 threads" >>report.txt
-~/PCP/quicksort 24 >>report.txt
-echo "" >>report.txt
-echo "32 threads" >>report.txt
-~/PCP/quicksort 32 >>report.txt
-echo "" >>report.txt
-echo "40 threads" >>report.txt
-~/PCP/quicksort 40 >>report.txt
-echo "" >>report.txt
-echo "48 threads" >>report.txt
-~/PCP/quicksort 48 >>report.txt
+echo "1 thread"  
+~/PCP/quicksort 1 
+echo "" 
+echo "2 threads" 
+~/PCP/quicksort 2 
+echo ""  
+echo "4 threads" 
+~/PCP/quicksort 4 
+echo "" 
+echo "8 threads" 
+~/PCP/quicksort 8 
+echo "" 
+echo "16 threads" 
+~/PCP/quicksort 16 
+echo "" 
+echo "24 threads" 
+~/PCP/quicksort 24 
+echo "" 
+echo "32 threads" 
+~/PCP/quicksort 32 
+echo "" 
+echo "40 threads" 
+~/PCP/quicksort 40 
+echo "" 
+echo "48 threads" 
+~/PCP/quicksort 48 
 
-echo "REP 3"  >>report.txt
+echo "REP 3"  
 
-echo "1 thread"  >>report.txt
-~/PCP/quicksort 1 >>report.txt
-echo "" >>report.txt
-echo "2 threads" >>report.txt
-~/PCP/quicksort 2 >>report.txt
-echo ""  >>report.txt
-echo "4 threads" >>report.txt
-~/PCP/quicksort 4 >>report.txt
-echo "" >>report.txt
-echo "8 threads" >>report.txt
-~/PCP/quicksort 8 >>report.txt
-echo "" >>report.txt
-echo "16 threads" >>report.txt
-~/PCP/quicksort 16 >>report.txt
-echo "" >>report.txt
-echo "24 threads" >>report.txt
-~/PCP/quicksort 24 >>report.txt
-echo "" >>report.txt
-echo "32 threads" >>report.txt
-~/PCP/quicksort 32 >>report.txt
-echo "" >>report.txt
-echo "40 threads" >>report.txt
-~/PCP/quicksort 40 >>report.txt
-echo "" >>report.txt
-echo "48 threads" >>report.txt
-~/PCP/quicksort 48 >>report.txt
-echo "REP 4"  >>report.txt
+echo "1 thread"  
+~/PCP/quicksort 1 
+echo "" 
+echo "2 threads" 
+~/PCP/quicksort 2 
+echo ""  
+echo "4 threads" 
+~/PCP/quicksort 4 
+echo "" 
+echo "8 threads" 
+~/PCP/quicksort 8 
+echo "" 
+echo "16 threads" 
+~/PCP/quicksort 16 
+echo "" 
+echo "24 threads" 
+~/PCP/quicksort 24 
+echo "" 
+echo "32 threads" 
+~/PCP/quicksort 32 
+echo "" 
+echo "40 threads" 
+~/PCP/quicksort 40 
+echo "" 
+echo "48 threads" 
+~/PCP/quicksort 48 
+echo "REP 4"  
 
-echo "1 thread"  >>report.txt
-~/PCP/quicksort 1 >>report.txt
-echo "" >>report.txt
-echo "2 threads" >>report.txt
-~/PCP/quicksort 2 >>report.txt
-echo ""  >>report.txt
-echo "4 threads" >>report.txt
-~/PCP/quicksort 4 >>report.txt
-echo "" >>report.txt
-echo "8 threads" >>report.txt
-~/PCP/quicksort 8 >>report.txt
-echo "" >>report.txt
-echo "16 threads" >>report.txt
-~/PCP/quicksort 16 >>report.txt
-echo "" >>report.txt
-echo "24 threads" >>report.txt
-~/PCP/quicksort 24 >>report.txt
-echo "" >>report.txt
-echo "32 threads" >>report.txt
-~/PCP/quicksort 32 >>report.txt
-echo "" >>report.txt
-echo "40 threads" >>report.txt
-~/PCP/quicksort 40 >>report.txt
-echo "" >>report.txt
-echo "48 threads" >>report.txt
-~/PCP/quicksort 48 >>report.txt
-echo "REP 5"  >>report.txt
+echo "1 thread"  
+~/PCP/quicksort 1 
+echo "" 
+echo "2 threads" 
+~/PCP/quicksort 2 
+echo ""  
+echo "4 threads" 
+~/PCP/quicksort 4 
+echo "" 
+echo "8 threads" 
+~/PCP/quicksort 8 
+echo "" 
+echo "16 threads" 
+~/PCP/quicksort 16 
+echo "" 
+echo "24 threads" 
+~/PCP/quicksort 24 
+echo "" 
+echo "32 threads" 
+~/PCP/quicksort 32 
+echo "" 
+echo "40 threads" 
+~/PCP/quicksort 40 
+echo "" 
+echo "48 threads" 
+~/PCP/quicksort 48 
+echo "REP 5"  
 
-echo "1 thread"  >>report.txt
-~/PCP/quicksort 1 >>report.txt
-echo "" >>report.txt
-echo "2 threads" >>report.txt
-~/PCP/quicksort 2 >>report.txt
-echo ""  >>report.txt
-echo "4 threads" >>report.txt
-~/PCP/quicksort 4 >>report.txt
-echo "" >>report.txt
-echo "8 threads" >>report.txt
-~/PCP/quicksort 8 >>report.txt
-echo "" >>report.txt
-echo "16 threads" >>report.txt
-~/PCP/quicksort 16 >>report.txt
-echo "" >>report.txt
-echo "24 threads" >>report.txt
-~/PCP/quicksort 24 >>report.txt
-echo "" >>report.txt
-echo "32 threads" >>report.txt
-~/PCP/quicksort 32 >>report.txt
-echo "" >>report.txt
-echo "40 threads" >>report.txt
-~/PCP/quicksort 40 >>report.txt
-echo "" >>report.txt
-echo "48 threads" >>report.txt
-~/PCP/quicksort 48 >>report.txt
+echo "1 thread"  
+~/PCP/quicksort 1 
+echo "" 
+echo "2 threads" 
+~/PCP/quicksort 2 
+echo ""  
+echo "4 threads" 
+~/PCP/quicksort 4 
+echo "" 
+echo "8 threads" 
+~/PCP/quicksort 8 
+echo "" 
+echo "16 threads" 
+~/PCP/quicksort 16 
+echo "" 
+echo "24 threads" 
+~/PCP/quicksort 24 
+echo "" 
+echo "32 threads" 
+~/PCP/quicksort 32 
+echo "" 
+echo "40 threads" 
+~/PCP/quicksort 40 
+echo "" 
+echo "48 threads" 
+~/PCP/quicksort 48 
